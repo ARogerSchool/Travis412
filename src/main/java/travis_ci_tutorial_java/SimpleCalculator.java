@@ -8,4 +8,8 @@ public class SimpleCalculator {
 	public int minus(int a, int b) {
 		return a - b;
 	}
+
+	public int mul(int a, int b) {
+		return a * b;
+	}
 }
