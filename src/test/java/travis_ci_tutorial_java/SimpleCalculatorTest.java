@@ -32,7 +32,7 @@ public class SimpleCalculatorTest {
 		try {
 			int x = calc.div(1,0);
 		} catch (Exception e) {
-			assertTrue(e instanceof ArithmeticException.class);
+			assertTrue(e instanceof ArithmeticException);
 		}
 	}
 }
