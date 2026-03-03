@@ -16,4 +16,9 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.minus(5, 3), 2);
 	}
+	@Test
+	public void testMul() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.minus(3, 9), 27);
+	}
 }
