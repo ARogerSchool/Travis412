@@ -21,4 +21,18 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.mul(3, 9), 27);
 	}
+	@Test
+	public void testDiv() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.div(4, 2), 2);
+	}
+	@Test
+	public void testDivByZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		try {
+			int x = calc.div(1,0);
+		} catch (Exception e) {
+			assertInstanceOf(e, ArithmeticException.class);
+		}
+	}
 }
